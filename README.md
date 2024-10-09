@@ -1,6 +1,6 @@
 # Null Movement Script in Go
 
-This project implements a low-level keyboard control application in Go, inspired by a similar script written in AutoHotkey. It ensures that only one movement key (W, A, S, or D) is active at a time, avoiding conflicting inputs. This script can be used in gaming scenarios where simultaneous directional key presses should be avoided.
+This project implements a low-level keyboard control application in Go, inspired by a similar script written in AutoHotkey. It ensures that only one movement key per pair (W/S or A/D) is active at a time, avoiding conflicting inputs. This script can be used in gaming scenarios where simultaneous directional key presses should be avoided.
 
 The project utilizes Windows API functions such as `SetWindowsHookEx` and `SendInput` to capture and manipulate keyboard input at a lower level than typical libraries. The implementation also includes various obfuscation techniques for enhanced binary security.
 
