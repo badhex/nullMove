@@ -22,8 +22,8 @@ The project utilizes Windows API functions such as `SetWindowsHookEx` and `SendI
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/null-movement-script-go.git
-    cd null-movement-script-go
+    git clone https://github.com/badhex/nullMove.git
+    cd nullMove
     ```
 
 2. **Build the project**:
