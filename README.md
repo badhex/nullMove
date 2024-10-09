@@ -33,28 +33,32 @@ The project utilizes Windows API functions such as `SetWindowsHookEx` and `SendI
     go build -o null_movement.exe main.go
     ```
 
-3. **Optional: Obfuscate the binary using `garble`**:
-   Install `garble`:
-    ```bash
-    go install mvdan.cc/garble@latest
-    ```
+   **Optional: Build without the console window**:
+   ```
+   go build -ldflags="-H windowsgui" -o null_movement.exe main.go
+   ```   
 
-   Build using `garble`:
-    ```bash
-    garble build -o null_movement_obfuscated.exe main.go
-    ```
+   **Optional: Obfuscate the binary using `garble`**:
+    * Install `garble`:
+      ```bash
+      go install mvdan.cc/garble@latest
+      ```
 
-4. **Optional: Compress and further obfuscate the binary using `upx`**:
-   Install `upx`:
-    ```bash
-    # Windows
-    choco install upx
-    ```
+      Build using `garble`:
+       ```bash
+       garble build -o null_movement_obfuscated.exe main.go
+       ```
 
-   Pack the binary:
-    ```bash
-    upx --best --ultra-brute null_movement_obfuscated.exe
-    ```
+   **Optional: Compress and further obfuscate the binary using `upx`**:
+      * Install `upx`:
+       ```
+       choco install upx
+       ```
+
+      * Pack the binary:
+       ```
+       upx --best --ultra-brute null_movement_obfuscated.exe
+       ```
 
 ## Usage
 
