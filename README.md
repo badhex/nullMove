@@ -8,9 +8,7 @@ The project utilizes Windows API functions such as `SetWindowsHookEx` and `SendI
 
 - **Low-Level Keyboard Hook**: Uses the Windows API to capture and process keyboard events in real-time.
 - **Mutual Exclusion of Movement Keys**: Ensures that only one of the keys from each movement pair (W/S or A/D) is held down at a time.
-- **Obfuscation Techniques**: Integrates obfuscation and anti-debugging techniques to minimize the risk of reverse-engineering.
-- **String Encryption**: Encrypts sensitive strings in the source code for added security.
-- **Anti-Debugging**: Includes basic checks to detect if the program is being run inside a debugger.
+- **Obfuscation Techniques**: Include obfuscation build methods to minimize the risk of detection.
 - **Binary Packing**: Can be further obfuscated using `upx` binary compression.
 
 ## Installation
